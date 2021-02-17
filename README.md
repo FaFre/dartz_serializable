@@ -1,0 +1,1 @@
+# dartz_serializable
