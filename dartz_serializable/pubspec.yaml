@@ -1,6 +1,6 @@
 name: dartz_serializable
 description: A small package that adds json_serializable support to dartz-monads
-version: 0.0.1
+version: 0.1.0-nullable.1
 homepage: https://github.com/FaFre/dartz_serializable
 environment:
   sdk: ">=2.12.0-0 <3.0.0"
