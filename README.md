@@ -1,1 +1,1 @@
-# dartz_serializable
+dartz_serializable/README.md
