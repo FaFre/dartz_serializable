@@ -10,9 +10,9 @@ class EitherConverter<L, R>
     assert(json.length == 1);
 
     switch (json.keys.first) {
-      case 'left':
+      case 'l':
         return left<L, R>(json.values.first);
-      case 'right':
+      case 'r':
         return right<L, R>(json.values.first);
       default:
         throw TypeError();
@@ -22,5 +22,5 @@ class EitherConverter<L, R>
   @override
   Map<String, dynamic> toJson(Either<L, R> either) =>
       either.fold<Map<String, dynamic>>(
-          (left) => {'left': left}, (right) => {'right': right});
+          (left) => {'l': left}, (right) => {'r': right});
 }

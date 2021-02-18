@@ -7,9 +7,9 @@ class OptionConverter<T>
 
   @override
   Option<T> fromJson(Map<String, dynamic> json) =>
-      (json.containsKey('value')) ? optionOf<T>(json['value']) : none();
+      (json.containsKey('v')) ? optionOf<T>(json['v']) : none();
 
   @override
   Map<String, dynamic> toJson(Option<T> option) =>
-      option.fold<Map<String, dynamic>>(() => {}, (value) => {'value': value});
+      option.fold<Map<String, dynamic>>(() => {}, (value) => {'v': value});
 }
