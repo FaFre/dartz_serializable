@@ -14,7 +14,7 @@ jobs:
         # set an id for the current step
         id: analysis
         with:
-          relativePath: dartz_serializabe/
+          relativePath: dartz_serializable/
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
       # You can then use this id to retrieve the outputs in the next steps.
